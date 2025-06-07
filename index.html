@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Prank Masuk</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20%;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 24px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Silakan klik untuk memulai</h1>
+  <button onclick="playPrank()">MASUK</button>
+
+  <audio id="prankAudio" src="sound/prank.mp3"></audio>
+
+  <script>
+    function playPrank() {
+      const audio = document.getElementById("prankAudio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
